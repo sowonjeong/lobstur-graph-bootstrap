@@ -1,3 +1,4 @@
+import os
 import networkx as nx
 import numpy as np
 import pandas as pd
@@ -11,10 +12,10 @@ from scipy.spatial.distance import jensenshannon
 import matplotlib.pyplot as plt
 import math
 
-from bootstrap.block_bootstrap import *
 from bootstrap.np_bootstrap import *
 from bootstrap.network_bootstrap import *
 from bootstrap.vae_sample import *
+from bootstrap.simple_split import *
 
 
 def compute_graph_statistics(graph):
